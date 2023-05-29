@@ -4,7 +4,7 @@ import {Col, Image, Progress, Row} from "antd";
 function Multimedia() {
     return (
         <div>
-            <Row style={{justifyContent: 'center'}}>
+            <Row style={{justifyContent: 'center'}} wrap={true}>
                 <Col span={6} className={'multimedia'}>
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                         <h2>Progreso de Películas Producidas</h2>
