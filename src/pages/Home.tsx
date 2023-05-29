@@ -1,4 +1,3 @@
-import React, {useState} from 'react';
 import {Image, Menu, MenuProps} from "antd";
 import CardComponent from "../components/CardComponent";
 import {HomeFilled} from "@ant-design/icons";
@@ -18,11 +17,10 @@ const items: MenuProps['items'] = [
     }
 ];
 function Home() {
-    const [current, setCurrent] = useState('home');
 
     return (
         <div>
-            <Menu selectedKeys={[current]} mode="horizontal" items={items}/>
+            <Menu mode="horizontal" items={items}/>
             <CardComponent />
         </div>
     );
